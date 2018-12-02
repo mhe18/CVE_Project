@@ -1,0 +1,144 @@
+Nov 30, 2018 8:36:35 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/common/classes], exists: [false], isDirectory: [false], canRead: [false]
+Nov 30, 2018 8:36:35 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/common], exists: [false], isDirectory: [false], canRead: [false]
+Nov 30, 2018 8:36:35 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/server/classes], exists: [false], isDirectory: [false], canRead: [false]
+Nov 30, 2018 8:36:35 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/server], exists: [false], isDirectory: [false], canRead: [false]
+Nov 30, 2018 8:36:35 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/shared/classes], exists: [false], isDirectory: [false], canRead: [false]
+Nov 30, 2018 8:36:35 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/shared], exists: [false], isDirectory: [false], canRead: [false]
+Nov 30, 2018 8:36:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.68 (Ubuntu)
+Nov 30, 2018 8:36:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Feb 18 2016 21:26:43 UTC
+Nov 30, 2018 8:36:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.68.0
+Nov 30, 2018 8:36:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Nov 30, 2018 8:36:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            4.8.0-36-generic
+Nov 30, 2018 8:36:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          i386
+Nov 30, 2018 8:36:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /usr/lib/jvm/java-8-oracle/jre
+Nov 30, 2018 8:36:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_161-b12
+Nov 30, 2018 8:36:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Nov 30, 2018 8:36:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /var/lib/tomcat7
+Nov 30, 2018 8:36:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /usr/share/tomcat7
+Nov 30, 2018 8:36:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/var/lib/tomcat7/conf/logging.properties
+Nov 30, 2018 8:36:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Nov 30, 2018 8:36:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.awt.headless=true
+Nov 30, 2018 8:36:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Xmx128m
+Nov 30, 2018 8:36:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -XX:+UseConcMarkSweepGC
+Nov 30, 2018 8:36:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.endorsed.dirs=/usr/share/tomcat7/endorsed
+Nov 30, 2018 8:36:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/var/lib/tomcat7
+Nov 30, 2018 8:36:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/usr/share/tomcat7
+Nov 30, 2018 8:36:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/tmp/tomcat7-tomcat7-tmp
+Nov 30, 2018 8:36:41 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Nov 30, 2018 8:36:41 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 5014 ms
+Nov 30, 2018 8:36:41 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Nov 30, 2018 8:36:41 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.68 (Ubuntu)
+Nov 30, 2018 8:36:42 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /var/lib/tomcat7/webapps/ROOT
+Nov 30, 2018 8:36:42 PM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+Nov 30, 2018 8:36:45 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Nov 30, 2018 8:36:45 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /var/lib/tomcat7/webapps/ROOT has finished in 3,788 ms
+Nov 30, 2018 8:36:45 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Nov 30, 2018 8:36:45 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 4115 ms
+Dec 02, 2018 3:03:38 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/common/classes], exists: [false], isDirectory: [false], canRead: [false]
+Dec 02, 2018 3:03:38 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/common], exists: [false], isDirectory: [false], canRead: [false]
+Dec 02, 2018 3:03:38 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/server/classes], exists: [false], isDirectory: [false], canRead: [false]
+Dec 02, 2018 3:03:38 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/server], exists: [false], isDirectory: [false], canRead: [false]
+Dec 02, 2018 3:03:38 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/shared/classes], exists: [false], isDirectory: [false], canRead: [false]
+Dec 02, 2018 3:03:38 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/shared], exists: [false], isDirectory: [false], canRead: [false]
+Dec 02, 2018 3:03:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.68 (Ubuntu)
+Dec 02, 2018 3:03:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Feb 18 2016 21:26:43 UTC
+Dec 02, 2018 3:03:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.68.0
+Dec 02, 2018 3:03:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Dec 02, 2018 3:03:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            4.8.0-36-generic
+Dec 02, 2018 3:03:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          i386
+Dec 02, 2018 3:03:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /usr/lib/jvm/java-8-oracle/jre
+Dec 02, 2018 3:03:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_161-b12
+Dec 02, 2018 3:03:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Dec 02, 2018 3:03:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /var/lib/tomcat7
+Dec 02, 2018 3:03:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /usr/share/tomcat7
+Dec 02, 2018 3:03:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/var/lib/tomcat7/conf/logging.properties
+Dec 02, 2018 3:03:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Dec 02, 2018 3:03:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.awt.headless=true
+Dec 02, 2018 3:03:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Xmx128m
+Dec 02, 2018 3:03:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -XX:+UseConcMarkSweepGC
+Dec 02, 2018 3:03:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.endorsed.dirs=/usr/share/tomcat7/endorsed
+Dec 02, 2018 3:03:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/var/lib/tomcat7
+Dec 02, 2018 3:03:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/usr/share/tomcat7
+Dec 02, 2018 3:03:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/tmp/tomcat7-tomcat7-tmp
+Dec 02, 2018 3:03:41 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Dec 02, 2018 3:03:41 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2170 ms
+Dec 02, 2018 3:03:41 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Dec 02, 2018 3:03:41 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.68 (Ubuntu)
+Dec 02, 2018 3:03:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /var/lib/tomcat7/webapps/ROOT
+Dec 02, 2018 3:03:41 PM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+Dec 02, 2018 3:03:42 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Dec 02, 2018 3:03:43 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /var/lib/tomcat7/webapps/ROOT has finished in 1,741 ms
+Dec 02, 2018 3:03:43 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Dec 02, 2018 3:03:43 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1845 ms
