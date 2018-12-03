@@ -1,66 +1,63 @@
 # CVE_Project
-Preconditions for exploitation:
+## Preconditions for exploitation:
 
 1.Check the user who is executing this script, if it is not tomcat user, the program will be aborted. 
   
-  id | grep -q tomcat
+  `id | grep -q tomcat`
   
 2.Copy a shell to /tmp file, notice right now this shell currently has low privilege.
 
-  cp $BACKDORSH $BACKDOORPATH
+  `cp $BACKDORSH $BACKDOORPATH`
   
-3.Change the owner of ld.so.preload to tomcat7 using the aforementioned vulnerability. Currently, we do not have  
-/etc/ld.so.preload on SEED, so we need to create this file at the same time. 
+3.Change the owner of ld.so.preload to tomcat7 using the aforementioned vulnerability. Currently, we do not have /etc/ld.so.preload on SEED, so we need to create this file at the same time. 
 
-4.Wait for the tomcat7 server to restart, and after it happens, we can import the geteuid () function we make into               /etc/ld.so/preload, and run a sudo command.While sudo is called, the geteuid() is executed, and the privilege of the shell     is escalated.
-  sudo --help
+4.Wait for the tomcat7 server to restart, and after it happens, we can import the geteuid () function we make into **/etc/ld.so/preload**, and run a sudo command.While sudo is called, the geteuid() is executed, and the privilege of the shell is escalated.
+  `sudo --help`
   
 5.Remove the function, the preload file, and execute the backdoor root shell. 
-
-
-Preparations for exploitation:
+## Preparations for exploitation:
 
 1.Install Tomcat 7 on the virtual machine
 
-  sudo apt-get install tomcat7
+  `sudo apt-get install tomcat7`
   
-2.If the first step is failed,set JDK_DIRS="/usr/lib/jvm/java-8-oracle" and add the statements “export JAVA_HOME=/usr/lib/jvm/java-8-oracle” and “export CATALINA_HOME=/usr/share/tomcat7”. Then reinstall Tomcat 7
+2.If the first step is failed,set J**DK_DIRS="/usr/lib/jvm/java-8-oracle"** and add the statements “export JAVA_HOME=/usr/lib/jvm/java-8-oracle” and **“export CATALINA_HOME=/usr/share/tomcat7”**. Then reinstall Tomcat 7
 
 3.Set up an initial password for the Tomcat user
 
-  sudo passwd tomcat7
+  `sudo passwd tomcat7`
   
 4.Assign login shell for the Tomcat user
 
-  sudo usrmod -s /bin/bash tomcat7
+  `sudo usrmod -s /bin/bash tomcat7`
   
 5.Establish the Tomcat 7 user shell
 
-  ssh tomcat7@localhost
+  `ssh tomcat7@localhost`
 
 
-Launch the attack:
+## Launch the attack:
 1.Create the exploit scripts attack.sh at /tmp through Tomcat7 user shell and then make the exploit codes executable
-  touch attack.sh
+  `touch attack.sh`
   
-  chmod +x attack.sh
+  `chmod +x attack.sh`
   
 2.Run the exploit code
 
-  ./attack.sh /var/log/tomcat7/catalina.out
+  `./attack.sh /var/log/tomcat7/catalina.out`
   
 3.Restart the Tomcat server to check the attack result.
 
-  sudo service tomcat7 restart
+  `sudo service tomcat7 restart`
   
 4.Check the ID of user
   
-  id
+  `id`
   
 Then the attack should be successful and the euid should be 0 which is root.
 
 
-Vulnerability:
+## Vulnerability:
 	# Run the catalina.sh script as a daemon
 	set +e
 	touch "$CATALINA_PID" "$CATALINA_BASE"/logs/catalina.out
