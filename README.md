@@ -44,7 +44,7 @@
   
 2.Run the exploit code
 
-  `./attack.sh /var/log/tomcat7/catalina.out`
+  `./attack.sh `
   
 3.Restart the Tomcat server to check the attack result.
 
